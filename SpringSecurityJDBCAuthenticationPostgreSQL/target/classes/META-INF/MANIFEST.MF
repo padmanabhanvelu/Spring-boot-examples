@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: SpringSecurityJDBCAuthenticationPostgreSQL
+Implementation-Version: 0.0.1
+Built-By: gsspvelu
+Implementation-Vendor-Id: com.javasampleapproach.springsecurity.jdbcau
+ thentication
+Build-Jdk: 1.8.0_161
+Implementation-URL: http://projects.spring.io/spring-boot/SpringSecuri
+ tyJDBCAuthenticationPostgreSQL/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
