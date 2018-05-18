@@ -8,14 +8,14 @@
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
-	<name>SpringSecurityJDBCAuthenticationPostgreSQL</name>
+	<name>Sample Application</name>
 	<description>SpringSecurityJDBCAuthenticationPostgreSQL</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.10.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
 
 	<properties>
