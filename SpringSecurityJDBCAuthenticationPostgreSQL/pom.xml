@@ -8,8 +8,8 @@
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
-	<name>Sample Application</name>
-	<description>SpringSecurityJDBCAuthenticationPostgreSQL</description>
+	<name>Spring Security Authentication</name>
+	<description>Sample Project for Spring Authentication</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
