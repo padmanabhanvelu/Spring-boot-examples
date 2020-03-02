@@ -1,0 +1,100 @@
+#left {
+    position:absolute;
+    left:0;
+    width:350px;
+    height:100%;
+    background-color:#FFF;
+}
+
+#center {
+    height:100%;
+    margin: 0 350px;
+    background-color:#FFF;
+}
+
+#right {
+    position:absolute;
+    right:0;
+    top:0;
+    width:350px;
+    height:100%;
+    background-color:#FFF;
+}
+
+#emsg {
+			display: none;
+		}
+
+header.header
+{
+background:white;
+position:fixed;
+display:block;
+width:100%;
+top:0;
+clear:both;
+z-index:999;
+}
+.header .header-container
+{
+width:1200px;
+height:60px;
+margin:0px auto;
+background:url("../images/esnc_logo_plain.png") no-repeat left 10px center;
+display:block;
+position:relative;
+}
+
+.header-container p
+{
+line-height:60px;
+color:#fff;
+font-size:13px;
+float:right;
+font-family:'ITCAvantGardeStd-Bk';
+font-weight:600; 
+position:relative;
+right:10px;
+}
+.main-container
+{
+width:1200px;
+margin:60px auto 0px auto;
+display:block;
+background:#fff;
+position:relative;
+/* overflow:hidden; */
+}
+footer.footer
+{
+width:1200px;
+height:100%;
+margin:0px auto 0px auto;
+display:block;
+background:#fff;
+position:relative;
+}
+p.foot
+{
+	font-size: smaller;
+	text-align:right;
+	margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+span.foot
+{
+	font-size: smaller;
+	text-align:right;
+	margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.prtlPrtlFullPageAppBody{
+    background-color: #f5f7f9;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0; 
+  }
+
+tr > td {
+  padding-bottom: 1em;
+  padding-left: 1em;
+}
