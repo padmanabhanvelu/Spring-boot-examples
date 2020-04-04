@@ -3,7 +3,7 @@ Project to demo multiple DB connection using external Tomcat datasource using jn
 This project is developed with Springboot Framework
 Three Oracle database connectivity using Spring Data JPA
 
-step by step instruction
+Step by step instruction
 
  external tomcat datasource and configured it.
 
