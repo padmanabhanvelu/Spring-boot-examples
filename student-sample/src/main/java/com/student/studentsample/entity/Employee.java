@@ -10,16 +10,16 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name="tbl_student")
+@Table(name="tbl_employee")
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class Student {
+public class Employee {
 
 
 	@Id
-	@Column(name="student_id")
-	private Long studentId;
+	@Column(name="emp_id")
+	private Long empId;
 	
 	@Column
 	private String name;
@@ -28,6 +28,9 @@ public class Student {
 	private String department;
 	
 
+	@Column
+	private Long salary;
+	
 	
 
 	

@@ -27,7 +27,7 @@ public class StudentSampleApplication {
 	@Transactional
     public void dataSetup(StudentRepo repository){
    
-    	Student student = new Student(1L,"Student1");
+    	Student student = new Student(1L,"Student1","Department");
     	repository.save(student);
     	System.out.println("student :"+repository.findAll());
     }
