@@ -8,4 +8,5 @@ import com.student.studentsample.entity.Student;
 @Repository
 public interface StudentRepo extends JpaRepository<Student, Long> {
 
+	
 }

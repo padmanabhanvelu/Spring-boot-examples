@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+<title>Create Employee</title>
+</head>
+
+<body>
+	
+		          		<h3>Create Employee</h3>
+		          		<form action="#" th:action="@{/employee/save}" th:object="${employee}" method="post">
+			          		<div class="modal-body">
+			          			<p style="font-weight: bold;font-size: 20px;color:blue;background-color:#E6E6E6;"><span th:if="${msg != null}" th:text="${msg}">User Details</span></p>
+								<table>
+									<tbody>
+										<tr>
+											<td>EmpId <span style="color: red">*</span></td>
+											<td><input type="text" class="form-control" id="empId" th:field="*{empId}" th:required="required" placeholder="emp Id"></td>
+										</tr>
+										<tr>
+											<td>Name <span style="color: red">*</span></td>
+											<td><input type="text" class="form-control" id="name" th:field="*{name}" th:required="required" placeholder=" Name"></td>
+										</tr>
+										<tr>
+											<td>Department <span style="color: red">*</span></td>
+											<td><input type="text" class="form-control" id="department" th:field="*{department}" th:required="required" placeholder="department"></td>
+										</tr>
+										<tr>
+											<td>Salary <span style="color: red">*</span></td>
+											<td><input type="text" class="form-control" id="salary" th:field="*{salary}" th:required="required" placeholder="salary"></td>
+										</tr>
+										
+										<tr>
+											<td><input type="submit" value="Submit" class="btn btn-primary" style="margin-top:10px"/></td>
+											<td><input type="reset" value="Reset" class="btn btn-secondary" style="margin-top:10px"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</form>
+					
+</body>
+
+</html>

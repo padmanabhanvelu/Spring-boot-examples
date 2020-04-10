@@ -1,4 +1,4 @@
-package com.student.studentsample.controller;
+package com.training.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -14,10 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.student.studentsample.entity.Employee;
-import com.student.studentsample.repo.EmployeeRepo;
-import com.student.studentsample.service.EmployeeService;
-import com.student.studentsample.util.Utility;
+import com.training.entity.Employee;
+import com.training.repo.EmployeeRepo;
+import com.training.service.EmployeeService;
 
 @Controller
 @RequestMapping(value = "/employee")
@@ -27,9 +26,7 @@ public class EmployeeController {
 	 @Autowired 
 	 EmployeeRepo employeeRepo;
 
-	 @Autowired
-	 Utility utility;
-	 
+	
 	 private final EmployeeService employeeService;
 	 
 	 
