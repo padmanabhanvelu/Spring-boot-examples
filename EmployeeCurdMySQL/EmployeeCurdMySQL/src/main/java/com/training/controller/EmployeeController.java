@@ -45,6 +45,10 @@ public class EmployeeController {
 	@GetMapping("/findAll")
 	public String findAll(Model model) {
 		List<Employee> employees = employeeRepo.findAll();
+		//List<Employee> employees = employeeRepo.findByDepartment("IT");
+		//List<Employee> employees = employeeRepo.findBySalaryBetween(5000L,200000L);
+		//List<Employee> employees = employeeRepo.findByDepartmentAndName("IT","Raj");
+		//List<Employee> employees = employeeRepo.findByNameContainingIgnoreCase("raj");
 		model.addAttribute("employees", employees);
 		return "list_employee";
 	}
