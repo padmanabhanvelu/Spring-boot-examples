@@ -19,7 +19,7 @@ public interface EmployeeRepo extends JpaRepository<Employee, Long> {
 	@Query(value = "SELECT * FROM tbl_employee u WHERE u.empId = :empId", nativeQuery = true)
 	List<Employee> findAllActiveUsersNative(@Param("empId") Long empId);
 	
-	List<Employee> findByDepartment(String name);
+	List<Employee> findByDepartmentDepartmentName(String name);
 	
 	List<Employee> findBySalaryBetween(Long val1, Long val2); 
 

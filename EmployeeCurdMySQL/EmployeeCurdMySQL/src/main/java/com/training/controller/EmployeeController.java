@@ -14,7 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import com.training.entity.Department;
 import com.training.entity.Employee;
+import com.training.repo.DepartmentRepo;
 import com.training.repo.EmployeeRepo;
 import com.training.service.EmployeeService;
 
@@ -25,6 +27,9 @@ public class EmployeeController {
 	
 	 @Autowired 
 	 EmployeeRepo employeeRepo;
+	 
+	 @Autowired 
+	 DepartmentRepo departmentRepo;
 
 	
 	 private final EmployeeService employeeService;
@@ -44,8 +49,9 @@ public class EmployeeController {
 	
 	@GetMapping("/findAll")
 	public String findAll(Model model) {
-		List<Employee> employees = employeeRepo.findAll();
-		//List<Employee> employees = employeeRepo.findByDepartment("IT");
+		
+		//List<Employee> employees = employeeRepo.findAll();
+		List<Employee> employees = employeeRepo.findByDepartmentDepartmentName("IT");
 		//List<Employee> employees = employeeRepo.findBySalaryBetween(5000L,200000L);
 		//List<Employee> employees = employeeRepo.findByDepartmentAndName("IT","Raj");
 		//List<Employee> employees = employeeRepo.findByNameContainingIgnoreCase("raj");
@@ -81,6 +87,15 @@ public class EmployeeController {
 		Optional<Employee> employee = employeeRepo.findById(empId);
 		model.addAttribute("employee", employee.get());
 		return "create-employee";
+	}
+	
+	
+	@GetMapping("/findAllDepart")
+	public String findAllDepartment(Model model) {
+		List<Department> departments = departmentRepo.findAll();
+		model.addAttribute("departments", departments);
+		return "list_department";
+		
 	}
 	
 

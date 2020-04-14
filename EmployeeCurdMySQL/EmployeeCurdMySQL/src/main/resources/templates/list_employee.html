@@ -15,6 +15,7 @@
 						<tr>
 							<th>ID</th>
 							<th>Name</th>
+							<th>DepartmentId</th>
 							<th>Department</th>
 							<th>Salary</th>
 						</tr>
@@ -23,7 +24,8 @@
 					<tr>
 						<td th:text="${emp.empId}"></td>
 						<td th:text="${emp.name}"></td>
-						<td th:text="${emp.department}"></td>
+						<td th:text="${emp.departmentId}"></td>
+						<td th:text="${emp.department.departmentName}"></td>
 						<td th:text="${emp.salary}"></td>
 						<td ><a th:href="@{|/employee/edit?empId=${emp.empId}|}">Edit</a></td>
 						<td ><a th:href="@{|/employee/delete?empId=${emp.empId}|}">Delete</a></td>
